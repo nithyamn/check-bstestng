@@ -1,0 +1,34 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "BROWSERSTACK_USERNAME",
+  "key": "BROWSERSTACK_ACCESS_KEY",
+
+  "capabilities": {
+    "build": "testng-browserstack-new",
+    "name": "parallel_test",
+    "browserstack.debug": true
+  },
+
+  "environments": {
+    "chrome": {
+      "browser": "chrome"
+    },
+    "firefox": {
+      "browser": "firefox"
+    },
+    "safari": {
+      "os": "OS X",
+      "os_version": "Mojave",
+      "browser": "safari",
+      "browser_version": "12.0"
+    },
+    "android": {
+      "os_version": "7.0",
+      "device": "Samsung Galaxy S8"
+    },
+    "iphone":{
+      "os_version" : "13",
+      "device": "iPhone XS"
+    }
+  }
+}
